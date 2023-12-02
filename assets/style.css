@@ -1,0 +1,377 @@
+:root {
+  --main-color: #ff383d;
+  --secondary-color: #035755;
+  --parag-color: #4b4f51;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  text-transform: capitalize;
+}
+.container {
+  width: 80%;
+  margin-inline: auto;
+  padding-bottom: 50px;
+}
+.centering {
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+img {
+  width: 100%;
+  line-height: 0;
+}
+/* -----------------component----------------- */
+.div-image-describ {
+  width: 50%;
+}
+.image-describ {
+  width: 100%;
+}
+.text-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.hint-title {
+  color: var(--main-color);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.04px;
+}
+.title {
+  color: var(--secondary-color);
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 72.28px;
+}
+.paragraph {
+  color: var(--parag-color);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 45.6px;
+}
+p {
+  font-size: 18px;
+font-weight: 400;
+line-height: 33px;
+color: var(--parag-color);
+}
+.btn {
+  background: var(--main-color);
+  border-radius: 65px;
+  -webkit-border-radius: 65px;
+  -moz-border-radius: 65px;
+  -ms-border-radius: 65px;
+  -o-border-radius: 65px;
+  padding: 24px 57px;
+  border: none;
+  outline: none;
+  width: fit-content;
+}
+
+/* -----------------Start head-page----------- */
+.head-page {
+  background-color: #fff8f8;
+  height: 100px;
+  padding-block: 36px;
+}
+.head-page .container {
+  justify-content: space-between;
+  padding-block: 10px;
+  height: 65px;
+  align-items: center;
+}
+.logo-div {
+  width: 191.82px;
+  justify-content: center;
+}
+.logo-img {
+  width: 100%;
+}
+.navBar-items {
+  gap: 40px;
+  font-size: 18px;
+  align-items: baseline;
+}
+.navBar-items li a {
+  text-transform: capitalize;
+  padding: 10px 17px;
+  height: 55px;
+  width: 154px;
+  font-weight: 400;
+  color: var(--secondary-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 21.59px;
+}
+.navBar-items li:last-child {
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  border-radius: 46px;
+  -webkit-border-radius: 46px;
+  -moz-border-radius: 46px;
+  -ms-border-radius: 46px;
+  -o-border-radius: 46px;
+  padding: 10px;
+}
+.navBar-items li:last-child a {
+  color: var(--main-color);
+  font-weight: 500;
+}
+.navBar-items li:not(:last-child)::after {
+  display: block;
+  content: ' ';
+  width: 6px;
+  height: 6px;
+  margin: 10px auto 0;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  opacity: 0;
+}
+.navBar-items li:hover::after {
+  opacity: 1;
+}
+.navBar-items li:not(:last-child):hover a {
+  color: var(--main-color);
+}
+/* --------------alert-section------------------------ */
+.alert-section {
+  padding-block: 56px;
+  background: linear-gradient(to bottom ,#fff8f8 , #fff);
+  height: 850px;
+}
+.alert-section .container {
+  align-items: center;
+  height: 100%;
+  margin-top: 56px;
+}
+button.btn  {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: capitalize;
+  }
+.alert-section .div-image-describ {
+  width: 80%;
+  margin-right: -12.5%;
+}
+.alert-section .image-describ {
+  width: 100%;
+}
+
+/* -------------whatIs-section------------------------- */
+.rubber {
+  position: relative;
+  background-image: url(./images/virus.svg) , url(./images/virus.svg), url(./images/virus.svg);
+  background-position: 95% 50%,106% 40%, 80px 90%;
+  background-repeat: no-repeat;
+  background-size: 120px, 200px, 250px;
+  z-index: 0;
+}
+.btnLearn {
+  background: rgba(250, 86, 82, 0.15);
+}
+.btnLearn a {
+  color: var(--main-color);
+}
+/*  -------------------------Contagion---------------------------- */
+.contagion .text-info {
+  margin: 10px auto;
+  text-align: center;
+}
+.cards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  z-index: 7;
+  position: relative;
+}
+.card {
+  position: relative;
+  padding: 50px;
+  width: calc((100% / 3) - 20px);
+  text-align: center;
+  width: 460px;
+  border-radius: 10px  ;
+  box-shadow: 0px 5px 80px 0px #00000014;
+}
+.card:first-of-type {
+  border-bottom: 6px solid var(--main-color);
+}
+.figure {
+  height: 40%;
+  margin-bottom: 15px;
+}
+.card h3 {
+font-size: 36px;
+font-weight: 500;
+line-height: 53px;
+color: var(--secondary-color);
+margin-bottom: 15px;
+}
+.card p, .symptomps p {
+font-size: 18px;
+font-weight: 400;
+line-height: 33px;
+color: var(--parag-color);
+}
+/* --------------------symptomps------------------ */
+.WhatShouldSection .text-info {
+  text-align: center;
+  margin-inline: auto;
+  width: 650px;
+  margin-bottom: 71px;
+}
+.step {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+}
+
+.step h4 {
+font-size: 47px;
+font-weight: 500;
+line-height: 69px;
+color: var(--secondary-color);
+}
+.step-info {
+  width: 60%;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.step-num {
+  width: 75px;
+  height: 75px;
+  border-radius: 50% ;
+  color: var(--main-color);
+  background-color: #fff8f8;
+  -webkit-border-radius: 50% ;
+  -moz-border-radius: 50% ;
+  -ms-border-radius: 50% ;
+  -o-border-radius: 50% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+font-size: 44px;
+font-weight: 700;
+line-height: 64px;
+}
+.step-info .text {
+  width: 85%;
+}
+.WhatShouldSection{
+  background-image: url(./images/green-virus.svg) , url(./images/green-virus.svg), url(./images/virus.svg);
+  background-position: -100px 25%,98% 83%, 108% 95%;
+  background-repeat: no-repeat;
+  background-size: 200px, 100px, 250px;
+}
+/* --------------------footer--------------------- */
+.footer {
+  background: linear-gradient(to top ,#fff8f8 , #fff);
+  background-image: url(./images/virus.svg) , url(./images/virus.svg);
+  background-position: 95% 10%,108% 40%;
+  background-repeat: no-repeat;
+  background-size: 130px, 250px;
+}
+.subscribe {
+  width: 50%;
+  margin-inline: auto;
+  text-align: center;
+  padding-bottom: 143px;
+}
+.subscribe h3 {
+font-size: 64px;
+line-height: 77px;
+font-size: 64px;
+font-weight: 600;
+line-height: 77px;
+color: var(--secondary-color);
+padding-bottom: 62px;
+}
+.send-email {
+  width: 790px;
+  width: fit-content;
+  background-color: #fff;
+  box-shadow: 0px 8px 80px 0px #0000000F;
+  border-radius: 57%;
+  -webkit-border-radius: 65px;
+  -moz-border-radius: 65px;
+  -ms-border-radius: 65px;
+  -o-border-radius: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  margin-inline: auto;
+}
+.email-input {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.submit-btn {
+  padding: 26px 81px;
+  background: #F44A45;
+  font-family: Gelion;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 26px;
+  cursor: pointer;
+}
+.contactWays {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBarFooter-items {
+  justify-content: space-between;
+  width: 574px;
+}
+.navBarFooter-items a {
+font-size: 23px;
+font-weight: 400;
+line-height: 28px;
+}
+.icon-items li a {
+font-size: 22px;
+font-weight: 400;
+line-height: 25px;
+}
+.icon-items {
+  gap: 40px;
+}
+.copyRight {
+  margin-top: 32.5px;
+  text-align: center;
+font-size: 23px;
+font-weight: 400;
+line-height: 28px;
+}
